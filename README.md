@@ -8,6 +8,10 @@ Scanner.py:
   pctwintot_calc
   profit_total_calc
 
+Indicators.py: 
+  FindCorrelations
+  
+  
 get_dayprofit_array
 def GetTotalData()
 HTML: 
