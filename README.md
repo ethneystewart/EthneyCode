@@ -4,27 +4,18 @@ However, in the end it was found that this algorithm did not work as the percent
 
 Some of the main function I helped code on this project are:
 
-Scanner.py: 
-  pctwintot_calc,
-  profit_total_calc,
-  get_dayprofit_array,
+Scanner.py: pctwintot_calc, profit_total_calc, get_dayprofit_array
   
-Indicators.py: 
-  FindCorrelations
+Indicators.py: FindCorrelations
   
-AutoScanner.py: 
-  SimulateCalcTrades,
-  SimulateTrades,
+AutoScanner.py: SimulateCalcTrades, SimulateTrades
   
 Webpage Additions (HTML): 
 
-AIDEEP
-  Created a collapse button 
-  Created total row 
-AICORR 
-  Created drop down menu 
+AIDEEP: created a collapse button,  created total row 
+AICORR: created drop down menu
   
-  Changed colours of text on all webpages. 
+Changed colours of text on all webpages. 
 
 
 
