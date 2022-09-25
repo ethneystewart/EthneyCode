@@ -7,17 +7,18 @@ Some of the main function I helped code on this project are:
 Scanner.py: 
   pctwintot_calc
   profit_total_calc
-
+  get_dayprofit_array
 Indicators.py: 
   FindCorrelations
+AutoScanner.py: 
+  SimulateCalcTrades
+  SimulateTrades
   
-  
-get_dayprofit_array
-def GetTotalData()
-HTML: 
-  Created a collapse button on webpage as you can see below. 
-  Created total row 
-  Changed colours of text.
+Webpage Additions (HTML): 
+  Created a collapse button on 
+  Created total row on 
+  Created drop down menu on 
+  Changed colours of text on all webpages. 
 
 
 
