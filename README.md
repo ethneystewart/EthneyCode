@@ -11,12 +11,12 @@ Indicators.py: FindCorrelations
 AutoScanner.py: SimulateCalcTrades, SimulateTrades
   
 Webpage Additions (HTML): 
+ 
+AIDEEP: created a collapse button,  created total row, changed colours of text 
 
-AIDEEP: created a collapse button,  created total row 
-AICORR: created drop down menu
+AICORR: created drop down menu, changed colours of text
   
-Changed colours of text on all webpages. 
 
-
+Pictures of webpages can be found in repository. 
 
 
