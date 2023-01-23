@@ -1,6 +1,6 @@
 # Stock Trading Algorithm 
 ---
-The code inlcuded in this folder is apart of a personal project of mine that I worked with a mentor to help create. This project focuses on finding a correlation between stocks in order to trade without human bias. Through the this project I learned and performed lots of data analysis and  created compariso models to aid in communicating and determining the performance of the algorithm. 
+The code inlcuded in this folder is apart of a personal project of mine that I worked with a mentor to help create. This project focuses on finding a correlation between stocks in order to trade without human bias. Through the this project I learned and performed data analysis and created comparison models to aid in communicating and determining the performance of the algorithm. 
 However, in the end it was found that this algorithm did not work as the percent win when simulated ended up resulting in around 50% (like flipping a coin).
 
 ## Algorithm Contributions:
