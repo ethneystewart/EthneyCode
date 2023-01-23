@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Bootstrap link included -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="./stylesheets/masood-styles.css" />
+    <link rel="stylesheet" href="./stylesheets/styles4.css" />
+
+    <!-- Javascript -->
+    <script src="./javascripts/search.js"></script>
+
+    <title>Locations</title>
+  </head>
+
+  <body>
+    <!-- =============Navbar============= -->
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="./index.html"><h1 class="newfonts2">GRAZE</h1></a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="./map.html"><h4 class="newFonts">Search</h4></a>
+          </li>
+          <li>
+            <a href="./chat.html"><h4 class="newFonts">Latest</h4></a>
+          </li>
+          <li>
+            <a href="./shareSales.html"
+              ><h4 class="newFonts">Share Sales</h4></a
+            >
+          </li>
+          <li>
+            <a href="./index.html"><h4 class="newFonts">Log Out</h4></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+
+    <section
+      style="display: flex; flex-direction: row; justify-content: space-around"
+    >
+      <div>
+        <div class="row" style="margin-bottom: 5%">
+          <div class="col-xs-10 col-xs-offset-1">
+            <!-- <form action="#" method="#" role="search"> -->
+            <div class="input-group">
+              <input
+                class="form-control"
+                placeholder="Search:"
+                name="srch-term"
+                id="ed-srch-term"
+                type="text"
+              />
+              <div class="input-group-btn">
+                <button onclick="search()" id="searchbtn">Search</button>
+              </div>
+            </div>
+            <!-- </form> -->
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row">
+          <button
+            onclick="getMap('loblaws')"
+            class="card"
+            style="
+              width: 15rem;
+              margin-bottom: 5%;
+              background-color: #dbdbdb;
+              margin-right: 2%;
+            "
+          >
+            <div class="card-body">
+              <h5 class="card-title">Loblaws Grocery 123 Princess Street</h5>
+              <p class="card-text" id="prices0">Food Item - $XX</p>
+              <p class="card-text">Inputted Yesterday</p>
+            </div>
+          </button>
+          <button
+            onclick="getMap('walmart')"
+            class="card"
+            style="width: 15rem; margin-bottom: 5%; background-color: #dbdbdb"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Walmart Supercenter 1130 Midland Ave</h5>
+              <p class="card-text" id="prices1">Food Item - $XX</p>
+              <p class="card-text">Inputted Yesterday</p>
+            </div>
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <button
+            onclick="getMap('metro')"
+            class="card"
+            style="
+              width: 15rem;
+              margin-bottom: 5%;
+              background-color: #dbdbdb;
+              margin-right: 2%;
+            "
+          >
+            <div class="card-body">
+              <h5 class="card-title">Metro 310 Barrie Street</h5>
+              <p class="card-text" id="prices2">Food Item - $XX</p>
+              <p class="card-text">Inputted Yesterday</p>
+            </div>
+          </button>
+          <button
+            onclick="getMap('costco')"
+            class="card"
+            style="width: 15rem; margin-bottom: 5%; background-color: #dbdbdb"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Costco Kingston 1015 Centennial Dr</h5>
+              <p class="card-text" id="prices3">Food Item - $XX</p>
+              <p class="card-text">Inputted Yesterday</p>
+            </div>
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <button
+            onclick="getMap('food-basics')"
+            class="card"
+            style="
+              width: 15rem;
+              margin-bottom: 5%;
+              background-color: #dbdbdb;
+              margin-right: 2%;
+            "
+          >
+            <div class="card-body">
+              <h5 class="card-title">Food Basics 1225 Princess Street</h5>
+              <p class="card-text" id="prices4">Food Item - $XX</p>
+              <p class="card-text">Inputted Yesterday</p>
+            </div>
+          </button>
+          <button
+            onclick="getMap('giant-tiger')"
+            class="card"
+            style="width: 15rem; margin-bottom: 5%; background-color: #dbdbdb"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Giant Tiger 813 Princess Street</h5>
+              <p class="card-text" id="prices5">Food Item - $XX</p>
+              <p class="card-text">Inputted Yesterday</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div id="mapArea">
+        <p style="margin-top: 70%">
+          Click on the buttons to see the locations :)
+        </p>
+      </div>
+    </section>
+
+    <script>
+      function getMap(location) {
+        switch (location) {
+          case "walmart":
+            document.getElementById("mapArea").innerHTML = `<iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.179211724757!2d-76.57709596921163!3d44.265132553840346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2adceb108b5f7%3A0xe1ae1369f0b3dd4b!2sWalmart%20Supercentre!5e0!3m2!1sen!2sca!4v1674324814334!5m2!1sen!2sca"
+                width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            break;
+          case "metro":
+            document.getElementById(
+              "mapArea"
+            ).innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.769545772894!2d-76.49400398457726!3d44.232402822801845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab00c75e499f%3A0x337296f7337d5f42!2sMetro!5e0!3m2!1sen!2sca!4v1674332121309!5m2!1sen!2sca" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            break;
+          case "costco":
+            document.getElementById(
+              "mapArea"
+            ).innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.4181844782!2d-76.56219598457652!3d44.26021562098422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ac36f6dae5ed%3A0x6a8da08937cd0e2c!2sCostco%20Kingston!5e0!3m2!1sen!2sca!4v1674332263748!5m2!1sen!2sca" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            break;
+          case "loblaws":
+            document.getElementById(
+              "mapArea"
+            ).innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.262854494684!2d-76.52073368457701!3d44.242832822120285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab9b295cf1af%3A0x65ee441f4ec3783e!2sLoblaws%20Princess%20Street!5e0!3m2!1sen!2sca!4v1674331931553!5m2!1sen!2sca" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            break;
+          case "food-basics":
+            console.log("food-basics");
+            document.getElementById(
+              "mapArea"
+            ).innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22859.33256034695!2d-76.57751688967284!3d44.260248839896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab88821694f5%3A0x567be494b8331918!2sFood%20Basics!5e0!3m2!1sen!2sca!4v1674332451733!5m2!1sen!2sca" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            break;
+          case "giant-tiger":
+            console.log("giant-tiger");
+            document.getElementById(
+              "mapArea"
+            ).innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.4078112389207!2d-76.51235666992159!3d44.23984915549486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab9f5ae3d42d%3A0xb966ed6e8269e42!2sGiant%20Tiger!5e0!3m2!1sen!2sca!4v1674332735996!5m2!1sen!2sca" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+            break;
+          default:
+            text = "I have never heard of that location...";
+        }
+      }
+      document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+}
+/* BODY */
+body {
+  background: url("background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f5f5f5;
+}
+
+.newFonts {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.newfonts2 {
+  font-weight: bold !important;
+}
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #001d3d;
+  font-size: 25px;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #001d3d;
+  font-size: 25px;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #c95f96;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.prices {
+  justify-content: right;
+  display: flex;
+  margin-right: 50px;
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+.price {
+  justify-content: right;
+  display: flex;
+  margin-right: 50px;
+  font-size: 25px;
+  margin-bottom: -10px;
+  font-family: "Roboto", sans-serif;
+  color: #c95f96;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*LOGIN*/
+div.container {
+  display: flex;
+  justify-content: center;
+}
+
+div.messages {
+  display: block;
+}
+
+div.menu {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 0.75rem rgb(91, 91, 91));
+  padding: 25px;
+  text-align: center;
+}
+
+div.chat {
+  width: 50vw;
+  background-color: #f0eeee;
+  border-radius: 15px;
+  top: 30%;
+  padding: 25px;
+  margin: 25px;
+}
+
+.chat h2 {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+div.form {
+  height: 70vh;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 0.75rem rgb(91, 91, 91));
+}
+
+input[type="submit" i] {
+  height: 50px;
+  width: 250px;
+  background-color: #3a0ca3;
+  border-radius: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  cursor: grab;
+}
+
+input[type="submit" i]:hover {
+  background-color: #000814;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  color: #001d3d;
+  font-size: 20px;
+  margin: 10px;
+}
+
+form {
+  display: block;
+}
+
+input[type="text" i] {
+  background-color: #f0eeee;
+  padding: 1px 2px;
+  font-size: 14px;
+}
+
+input {
+  writing-mode: horizontal-tb !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-rendering: inherit;
+  color: #001d3d;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: inherit;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+}
+
+div.button {
+  height: 50px;
+  width: 250px;
+  background-color: #3a0ca3;
+  border-radius: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+div.button:hover {
+  background-color: #000814;
+}
+div.button h1 {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+div.menu h2 {
+  margin: 15px;
+}
+
+/* NAV BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a86ff;
+  color: white;
+  padding: 15px;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.brand-title h1 {
+  font-size: 16px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  div.button {
+    height: 35px;
+    width: 175px;
+  }
+  div.menu {
+    width: 80vw;
+    height: 30vh;
+  }
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  #intro {
+    color: black;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .brand-title h1 {
+    display: block;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+}
