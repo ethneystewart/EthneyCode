@@ -1,4 +1,4 @@
-##Graze - hackHer Hackathon Project
+# Graze - hackHer Hackathon Project
 *Demo Video:* <a href="https://youtu.be/9UiIdn8t2TY"> https://youtu.be/9UiIdn8t2TY </a>
 
 Contributors:
