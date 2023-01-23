@@ -1,6 +1,8 @@
 # Graze - hackHer Hackathon Project
 *Demo Video:* <a href="https://youtu.be/9UiIdn8t2TY"> https://youtu.be/9UiIdn8t2TY </a>
 
+This project was the first hackathon I have participated in and beleive I learned alot of valuable skills that I look forward to using in future projects. 
+
 Contributors:
 ---
 Author: Ethney Stewart  <br>
