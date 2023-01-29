@@ -7,5 +7,7 @@ Stock Trading Algorithm (2022)
 
 Graze - hackHer (2023)
 
+Waste Notify - QHacks (2023)
+
 
 
