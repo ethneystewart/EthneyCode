@@ -1,5 +1,6 @@
 # QHacks_2023 - Garbage Kingston
 
+https://devpost.com/software/waste-notify
 
 ## Contributors:
 ---
