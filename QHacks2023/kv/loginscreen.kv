@@ -1,0 +1,86 @@
+<LoginScreen>:
+    BoxLayout:
+        padding:0
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("#fcfcfa")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        # Adding image from the system
+        Image:
+            # using computer path to image as source
+            source: "icons/city.png"
+
+            # Giving the size of image
+            size_hint_x: 1
+
+            # allow stretching of image
+            allow_stretch: False
+
+            # change position
+            pos_hint: {'center_x': 100, 'center_y': 0.9}
+
+        # end code for inserting image
+
+
+    BoxLayout
+        id: login_layout
+        orientation: 'vertical'
+        padding: [10,50,10,50]
+        spacing: 50
+
+        Label:
+            text: 'City of Kingston'
+            color: utils.get_color_from_hex("#1E1E1E")
+            font_size: 1
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Employee ID'
+                color: utils.get_color_from_hex("#1E1E1E")
+                font_size: 20
+                halign: 'left'
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: login
+                multiline:False
+                font_size: 28
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Password'
+                color: utils.get_color_from_hex("#1E1E1E")
+                halign: 'left'
+                font_size: 20
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: password
+                multiline:False
+                password:True
+                font_size: 28
+
+
+        Button:
+            text: 'Sign in'
+            color: utils.get_color_from_hex("#1E1E1E")
+            font_size: 24
+            on_press:
+                color: utils.get_color_from_hex("#507AF8")
+            on_release:
+                app.change_screen('home_screen')
+        Label:
+            text: 'Forgot password'
+            color: utils.get_color_from_hex("#1E1E1E")
+            font_size: 20
+            halign: 'left'
+            text_size: root.width-20, 20
+
+
+
