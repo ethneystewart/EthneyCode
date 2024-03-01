@@ -9,5 +9,7 @@ Graze - hackHer (2023)
 
 Waste Notify - QHacks (2023)
 
+CMPE 332 - Course Project (2023)
+
 
 
