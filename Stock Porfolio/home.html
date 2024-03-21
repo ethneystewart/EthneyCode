@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Porfolio</title>
+     <!-- Include Plotly.js -->
+    
+    <style>
+        body {
+            background-color:#84baf7;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table{ 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+        }
+        th, td{ 
+            padding: 8px; 
+            text-align: left; 
+            border-bottom: 1px solid #ddd;
+        }
+        th{ 
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even){ 
+            background-color: #f2f2f2;
+        }
+        tr:hover{ 
+            background-color: #ddd;
+        }
+        .container{ 
+            width: 100%;
+        }
+        .carousel {
+            width: 95%;
+            background-color: #f0f0f0;
+            border-radius: 40px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Stack boxes vertically */
+        }
+        .rounded-box {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .general-info{ 
+            width: 50%; 
+            flex: 1;
+            padding: 20px;
+        }
+        .graph-side{ 
+            width: 100%;
+            flex: 1;
+            padding: 1px;
+            float: right;
+        }
+        .graph-side2{ 
+            width: 50%;
+            flex: 1;
+            padding: 1px;
+            float: right;
+        }
+    </style>
+  </head>
+    <body> 
+        <h1> PORTFOLIO</h1>
+        <p></p>
+    </body>
+    <body style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div class="container">
+          <div class="carousel">
+            {%for stock in data%}
+                <div class="rounded-box">
+                    <div class="general-info"> 
+                    <p>{{stock['ticker']}}</p>
+                    <p> Price: ${{stock['price']}}</p>
+                    <p> Price Change: ${{stock['change']}}</p>
+                    <p> Percent Change: {{stock["change%"]}}</p>
+                    </div class="graph-side" id="stock-chart" style="width: 800px; height: 400px;">
+                        {{ stock["graph_daily"] | safe }}
+                    </div>
+                </div>
+            {%endfor%}
+          </div>
+        </div>
+        
+        <div class="graph-side"> 
+            {{ plot2 | safe }}
+            {{ plot3 | safe }}
+        </div> 
+    </body>
+</html>
