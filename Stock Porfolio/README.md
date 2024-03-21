@@ -19,4 +19,4 @@ Although I have a Key from the API website I used to pull stocks it wont allow m
 Required packages: flask, pandas, plotly.
 
 
-![here is my photo](https://github.com/ethneystewart/EthneyCode/blob/main/examplephoto.jpg?raw=true)
+![Here is a photo of my website](https://github.com/ethneystewart/EthneyCode/blob/main/Stock%20Porfolio/examplephoto.png?raw=true)
