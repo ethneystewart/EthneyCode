@@ -11,7 +11,7 @@ Email: 'ethney@cyberstewart.com'<br>
 ---
 
 ## Descriptions:
-This is a website that was built using html, css, and php. A SQL database was created and data was populated and queried into website using SQL as well. 
+This is a website that was built using html, css, and php. A SQL database was created and data was populated and queried into website. 
 
 # Setup Details:
 Requires PHP Admin
