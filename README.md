@@ -11,5 +11,5 @@ Waste Notify - QHacks (2023)
 
 CMPE 332 - Course Project (2023)
 
-
+Stock Portfolio - Personal Project (2024)
 
