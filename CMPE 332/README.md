@@ -1,6 +1,6 @@
 # CMPE 332 - Restaurant Database
 
-This is a course project. 
+Please see demo video for full explanation. 
 
 ## Contributors:
 ---
